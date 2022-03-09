@@ -5,24 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      body{
-        background-color: black;
-      }
-
-      h3, h4, h5, h6 {
-        color: #ffffff;
-      }
-
-      p{
-        color: #cccccc;
-      }
-
-      href {
-        color: #8eff31;
-      }
-    </style>
-
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
@@ -41,11 +23,11 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+<!--        {% if site.github.is_project_page %}-->
+<!--        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>-->
 
         <small>Tech Talk Notes</small></br>
-        <a class="view"><a href="/csa/tt1">Tech Talk 0</a></a>
+        <a class="view"><a href="/csa/tt0">Tech Talk 0</a></a>
         {% endif %}
 
         {% if site.github.is_user_page %}
