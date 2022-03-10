@@ -33,6 +33,8 @@ public static Animal[] animalData() {
 		new Animal("Dog", 14, "Brown")
 	};
 }
+
+//this is a comment
 ```
 
 Java HashMap
