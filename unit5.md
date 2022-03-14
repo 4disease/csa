@@ -10,7 +10,7 @@ Encapsulation:
 - Getters: return value of variable/data
 - Setters: Set value of variable/data
 
-//Single line comment
+//Single line comment//
 /* multi linecomment */
 
 Accessor methods ("Getters")
