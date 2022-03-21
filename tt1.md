@@ -4,6 +4,9 @@ Linked lists: A way of keeping and managing a list of objects
 - Generic data
 - ForEach loop support
 
+Generic T
+- Operates on objects of any type
+
 ### Queue Linked List 
 First in, first out
 - Head: Start of the list (Ex. Seven)
