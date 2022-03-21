@@ -390,16 +390,25 @@ public class Stack
 
 StackTester class
 ```java
+
 class StackTester {
     public static void main(String[] args)
     {
 
+        // Creating queue list to add
         Object[] queuestart = new Integer[] { 1, 2, 3};
         Object[] stackfinal = new Integer[] {};
+        
+        // list to linked list
         QueueManager startq = new QueueManager("Integers", queuestart);
 
+        // print linked list
         startq.printQueue();
+        
+        // create final linked list
         Stack finals = new Stack();
+        
+        
         for (int i = 0; i < queuestart.length; i++) {
             finals.push(queuestart[i]);
         }
