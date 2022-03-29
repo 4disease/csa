@@ -97,4 +97,53 @@
     }
 ```
 
+### Calculator Code
+
+```java
+    // Takes RPN and produces a final result
+    private void rpnToResult()
+    {
+        // Stack used to hold calculation while process RPN
+        Stack calculation = new Stack();
+
+        for (int i = 0; i < reverse_polish.size(); i++) // for loop to process RPN
+        {
+            // If the token is a number
+            if (!(isOperator(reverse_polish.get(i)))) {
+                // Push number to stack
+                calculation.push(reverse_polish.get(i));
+            } else {
+                double firstPop = Double.valueOf(calculation.pop().toString());
+                double secondPop = Double.valueOf(calculation.pop().toString());
+                // Pop the two top entries
+                // Based off of Token operator calculate result
+                if (reverse_polish.get(i).equals("%")) {
+                    result = secondPop % firstPop;
+                } else if (reverse_polish.get(i).equals("^")) {
+                    result = Math.pow(secondPop, firstPop);
+                } else if (reverse_polish.get(i).equals("*")) {
+                    result = secondPop * firstPop;
+                } else if (reverse_polish.get(i).equals("/")) {
+                    result = secondPop / firstPop;
+                } else if (reverse_polish.get(i).equals("+")) {
+                    result = secondPop + firstPop;
+                } else if (reverse_polish.get(i).equals("-")) {
+                    result = secondPop - firstPop;
+                }
+
+                // Push result back onto the stack
+                calculation.push(result);
+            }
+        }
+        // Pop final result and set as final result for expression
+        this.result = (double)calculation.pop();
+    }
+```
+
+For this segment, we had to write a method that would calculate the result from an array of numbers in RPN format.
+I was able to fulfill this task by using a for loop. Numbers are pushed to a stack, and calculations are made based on the order of the array. 
+If statements are used to make the calculations and return them to the stack. 
+
+
+
 
