@@ -1,5 +1,9 @@
 ## Sorts
 
+Sorting 5000 items from least to greatest.
+
+Big O notation is used to indicate complexity and the amount of time to complete the sort. 
+
 ### Insertion Sort
 
 ```java
@@ -18,7 +22,11 @@ static void insertionSort(int arr[])
         }
     }
 ```
-Insertion sort is another linear algorithm that sorts elements from index [0] to index [n-1]. In the inner loop of this algorithm, it find the gap, insertion point for the next item and inserts it. Each inner loop leave the list partially sorted according to outer loops index.
+Linear algorithm that sorts by finding the insertion point of the next number for sorting in the proper order.
+
+It has two nested loops, which means that as the number of elements n in the array arr grows it will take approximately n * n longer to perform the sorting. Represented by O(n^2).
+
+
 
 ### Bubble Sort
 
@@ -36,7 +44,8 @@ public static void bubbleSort(int arr[]) {
         }
     }
 ```
-Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. Often takes a long time since it needs multiple runs to sort the items in the correct order.
+
 
 ### Selection Sort
 ```java
@@ -53,7 +62,7 @@ public static void selectionSort(int arr[]) {
         }
     }
 ```
-Selection sort is a linear sort algorithm as it moves from index [0] to [n-1]. In an inner loop it in a second linear loop that compares two elements (like seen in the visual below) and notes which is smallest, after cycling to the end it swaps the smallest number to the lowest in the round.
+A linear sort algorithm that runs through the data, finds the smallest value and puts it at the end. It takes multiple runthroughs to put the data into the right order. 
 
 ### Merge Sort
 ```java
@@ -66,4 +75,6 @@ public static void mergeSort(int arr[], int start, int end) {
         }
     }
 ```
-This algorithm uses a divide and conquer algorithm, versus linear algorithm of insertion or selection sort. Looking at it can be complicated, but it is more simple than it looks. It divides the array into two different groups recursively, until it gets only two to compare, swaps if necessary. Then it pops out of the recursion, observe the cascading and then the inverted assembly in illustration, after pop it puts each split group back together using a sorted comparison.
+A divide and conquer algorithm. The array is split into two, where data is compared. The data is reordered appropriately and put into one array again afterwards. 
+
+Since the merge sort divides the data and calculates smaller sets of data at once, its time complexity is O(n log(n)), making it more efficient than the previous sorts.
