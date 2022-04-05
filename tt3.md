@@ -78,3 +78,7 @@ public static void mergeSort(int arr[], int start, int end) {
 A divide and conquer algorithm. The array is split into two, where data is compared. The data is reordered appropriately and put into one array again afterwards. 
 
 Since the merge sort divides the data and calculates smaller sets of data at once, its time complexity is O(n log(n)), making it more efficient than the previous sorts.
+
+| Replit |           Review Ticket                              | 
+|-----------------------------|-----------------------------|  
+ [Replit](https://replit.com/@4DISEASE/csa#hacks/Sort.java) | [Review Ticket](https://github.com/4disease/csa/issues/4) |
