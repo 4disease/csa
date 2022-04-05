@@ -6,3 +6,5 @@ Use the navigation on the left to view CSA trimester 3 content.
 | ---- | ---- |
 | 0 | [Ticket](https://github.com/mistylavender/RedTailedHawks/issues/6) |
 | 1 | [Ticket](https://github.com/4disease/csa/issues/2) |
+| 1 | [Ticket](https://github.com/4disease/csa/issues/3) |
+| 1 | [Ticket](https://github.com/4disease/csa/issues/4) |
