@@ -423,3 +423,7 @@ class StackTester {
 
 
 ```
+
+| Replit |           Review Ticket                              | 
+|-----------------------------|-----------------------------|  
+ [Replit](https://replit.com/@4DISEASE/csa#hacks/LinkedList.java) | [Review Ticket](https://github.com/4disease/csa/issues/2) |
