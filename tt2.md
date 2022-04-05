@@ -146,6 +146,6 @@ If statements are used to make the calculations and return them to the stack.
 
 | Replit |           Review Ticket                              | 
 |-----------------------------|-----------------------------|  
- [Replit](https://replit.com/@4DISEASE/csa#hacks/LinkedList.java) | [Review Ticket](https://github.com/4disease/csa/issues/2) |
+ [Replit](https://replit.com/@4DISEASE/csa#hacks/Calculator2.java) | [Review Ticket](https://github.com/4disease/csa/issues/3) |
 
 
