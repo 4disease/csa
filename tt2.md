@@ -144,6 +144,8 @@ For this segment, we had to write a method that would calculate the result from 
 I was able to fulfill this task by using a for loop. Numbers are pushed to a stack, and calculations are made based on the order of the array. 
 If statements are used to make the calculations and return them to the stack. 
 
-
+| Replit |           Review Ticket                              | 
+|-----------------------------|-----------------------------|  
+ [Replit](https://replit.com/@4DISEASE/csa#hacks/Calculator2.java) | [Review Ticket](https://github.com/4disease/csa/issues/3) |
 
 
