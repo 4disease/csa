@@ -52,3 +52,6 @@ private final Map<String, Integer> OPERATORS = new HashMap<>();
 
 Algorithms always accompany data structures.
 
+| Replit |           Review Ticket                              | 
+|-----------------------------|-----------------------------|  
+ [Replit](https://replit.com/@4DISEASE/csa#hacks/Menu.java) | [Review Ticket](https://github.com/4disease/csa/issues/1) |
