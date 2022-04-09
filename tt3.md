@@ -79,6 +79,27 @@ A divide and conquer algorithm. The array is split into two, where data is compa
 
 Since the merge sort divides the data and calculates smaller sets of data at once, its time complexity is O(n log(n)), making it more efficient than the previous sorts.
 
+### Efficiency Analysis
+
+I performed analysis on these 4 different sorts by running them under different amounts of data, ranging from 1000 to 10000, then graphing the nanoseconds it took to complete the sorting.
+Below is a graph of all the sorts compared on one graph.
+![Graph 1](/static/graph1.png)
+Red: Insertion
+Green: Bubble
+Purple: Selection
+Orange: Merge
+
+According to the distribution of the graph, the selection sort seems to be the optimal method for sorting these sets of data.
+From least to most efficient: bubble, insertion, merge, then insertion.
+![Graph 1](/static/graph3.png)
+![Graph 1](/static/graph2.png)
+![Graph 1](/static/graph5.png)
+![Graph 1](/static/graph4.png)
+
+However, after doing research, most pages have stated that merge sorting is the most effective type of sort. Issues in my analysis could be that I didn't use large enough data sets or didn't collect a large enough range of data. Overall, we can state that the selection sort is most optimal for this size and type of data, but for other data types and sizes, the same may not be true. 
+
+
+
 | Replit |           Review Ticket                              | 
 |-----------------------------|-----------------------------|  
  [Replit](https://replit.com/@4DISEASE/csa#hacks/Sort.java) | [Review Ticket](https://github.com/4disease/csa/issues/4) |
