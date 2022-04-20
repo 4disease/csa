@@ -121,6 +121,7 @@ class QueueManager<T> {
     public QueueManager(String name, T[]... seriesOfObjects) {
         this.name = name;
         this.addList(seriesOfObjects);
+        this.deleteList();
     }
 
 
@@ -131,7 +132,7 @@ class QueueManager<T> {
         for (T[] objects: seriesOfObjects)
             for (T data : objects) {
                 this.queue.add(data);
-
+                this.printQueue();
               //ok so this basically does nothing
                 this.count++;
             }
@@ -148,6 +149,7 @@ class QueueManager<T> {
   public void deleteList(){
     for (T data : queue){
       this.queue.delete();
+      this.printQueue();
       this.count--;
     }
   }
