@@ -111,18 +111,26 @@ class Driver {
         new MenuRow("Sort", () -> Sort.main(null))
       };
 
+      MenuRow[] rows4 = new MenuRow[]{
+        new MenuRow("Exit", () -> main(null)),
+        new MenuRow("2015 FRQ 1", () -> Arrays.main(null)),
+        new MenuRow("2015 FRQ 2", () -> HiddenWords.main(null)),
+        new MenuRow("2015 FRQ 3", () -> SparseArray.main(null))
+      };
 
         // Menu construction
         Menu menu0 = new Menu(rows);
         Menu menu1 = new Menu (rows1);
         Menu menu2 = new Menu(rows2);
       Menu menu3 = new Menu(rows3);
+      Menu menu4 = new Menu(rows4);
 
       MenuRow[] weeks = new MenuRow[]{
         new MenuRow("Week 0", () -> runMenu(menu0)),
         new MenuRow("Week 1", () -> runMenu(menu1)),
         new MenuRow("Week 2", () -> runMenu(menu2)),
-        new MenuRow("Week 3", () -> runMenu(menu3))
+        new MenuRow("Week 3", () -> runMenu(menu3)),
+        new MenuRow("Week 6", () -> runMenu(menu4))
       };
 
       Menu weekmenu = new Menu(weeks);
