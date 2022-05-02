@@ -115,7 +115,16 @@ class Driver {
         new MenuRow("Exit", () -> main(null)),
         new MenuRow("2015 FRQ 1", () -> Arrays.main(null)),
         new MenuRow("2015 FRQ 2", () -> HiddenWords.main(null)),
-        new MenuRow("2015 FRQ 3", () -> SparseArray.main(null))
+        new MenuRow("2015 FRQ 3", () -> SparseArray.main(null)),
+        new MenuRow("2015 FRQ 4", () -> MultipleGroups.main(null))
+      };
+
+      MenuRow[] rows5 = new MenuRow[]{
+        new MenuRow("Exit", () -> main(null)),
+        new MenuRow("2020 FRQ 1", () -> Hailstone.main(null)),
+        new MenuRow("2020 FRQ 2", () -> GameSpinner.main(null)),
+        new MenuRow("2020 FRQ 3", () -> ReviewCollector.main(null)),
+        new MenuRow("2020 FRQ 4", () -> Theater.main(null))
       };
 
         // Menu construction
@@ -124,13 +133,15 @@ class Driver {
         Menu menu2 = new Menu(rows2);
       Menu menu3 = new Menu(rows3);
       Menu menu4 = new Menu(rows4);
+      Menu menu5 = new Menu(rows5);
 
       MenuRow[] weeks = new MenuRow[]{
         new MenuRow("Week 0", () -> runMenu(menu0)),
         new MenuRow("Week 1", () -> runMenu(menu1)),
         new MenuRow("Week 2", () -> runMenu(menu2)),
         new MenuRow("Week 3", () -> runMenu(menu3)),
-        new MenuRow("Week 6", () -> runMenu(menu4))
+        new MenuRow("Week 6", () -> runMenu(menu4)),
+        new MenuRow("Week 7", () -> runMenu(menu5))
       };
 
       Menu weekmenu = new Menu(weeks);

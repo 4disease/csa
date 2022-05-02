@@ -48,7 +48,7 @@ public String getHint(String guess){
     System.out.println("Enter 5-letter guess");
 
     while(!gamecomplete){
-    String userGuess = myObj.nextLine();
+    String userGuess = myObj.nextLine().toUpperCase();
       if(harps.getHint(userGuess).equals(harps.getWord())){
         System.out.println("You win!");
         gamecomplete = true;
